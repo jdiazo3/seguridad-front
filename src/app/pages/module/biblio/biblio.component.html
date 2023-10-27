@@ -1,0 +1,37 @@
+<body>
+
+
+  <div class="chat-container">
+    <div id="menu-lateral">
+      <ul>
+          <li><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="home">Actividad</a></li>
+          <!--li><a class="link-offset-2 link-underline link-underline-opacity-0" href="archivos">archivos</a></li -->
+          <li><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="biblio">Historial</a></li>
+      </ul>
+    </div>
+    <!-- Example Code -->
+    <div class="contenedor-tabla">
+      <hr>
+      <h2 class="h22">Movimientos de las entradas y salidas</h2>
+      <hr>
+      <table>
+        <thead>
+            <tr>
+                <th>Sensor</th>
+                <th>Activado</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let men of mensaje ">
+                <td>{{ men.puerta }}</td>
+                <td>TRUE</td>
+                <td>{{ men.fecha }}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+    </div>
+</body>
+<router-outlet></router-outlet>

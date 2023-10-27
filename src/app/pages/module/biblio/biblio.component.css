@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#e1dcdc;
+
+}
+.h22{
+  font-family: Rage;
+}
+#menu-lateral {
+width: 250px;
+background-image: url('../../../../assets/images/fondo.jpg');
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+overflow: auto;
+}
+
+#menu-lateral ul {
+list-style-type: none;
+padding: 0;
+}
+
+#menu-lateral ul li {
+padding: 10px;
+text-align: center;
+}
+
+#menu-lateral ul li:hover {
+background-color: #555;
+}
+
+.chat-container {
+  margin: 7%;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Para evitar que el área de mensajes oculte el input */
+  /*background-image: url('../../../../assets/images/fondo.jpg');*/
+  background-size: cover; /* Ajusta el tamaño para cubrir todo el contenedor */
+  background-repeat: no-repeat; /* Evita repetir la imagen */
+  background-position: center center; /* Centra la imagen */
+  padding: 0% 23% 0% 23%;
+  text-align: center;
+  justify-content: center;
+
+}
+
+table {
+  margin-top: 5%;
+  border-collapse: collapse; /* Combina los bordes de las celdas */
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000; /* Añade un borde de 1 píxel a las celdas */
+  padding: 8px; /* Añade un espacio interno de 8 píxeles */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+th {
+  background-color: #ffffff; /* Color de fondo para los encabezados */
+  font-weight: bold; /* Hace el texto en negrita */
+}
+.contenedor-tabla {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+}
+
+
+
+

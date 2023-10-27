@@ -1,0 +1,38 @@
+<body>
+
+
+  <div class="chat-container">
+    <div id="menu-lateral">
+      <ul>
+          <li><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="home">Actividad</a></li>
+          <!--li><a class="link-offset-2 link-underline link-underline-opacity-0" href="archivos">archivos</a></li -->
+          <li><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="biblio">Historial</a></li>
+      </ul>
+    </div>
+
+  <!-- Contenido Principal -->
+
+    <h1 style="font-family: Rage;">Actividad de los sensores</h1>
+
+        <div class="chat-messages" id="chatDiv" #chatDivElement>
+
+            <div class="fila">
+                <div class="columna {{entrada1}}" >
+                    <div class="contenido">Entrada 1</div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna {{entrada2}}">
+                    <div class="contenido">Entrada 2</div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna {{salida}}" ng-class="rojo">
+                    <div class="contenido">Salida</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<router-outlet></router-outlet>
